@@ -82,8 +82,8 @@ trait WithRequestQuery
         [$search, $searchColumns] = $this->setSearchingQuery($request);
 
         return $request->get('paginate') ?
-            $this->paginate($request->get('per_page')) :
-            $this->all($searchColumns);
+            $this->makeModel()->paginate($request->get('per_page')) :
+            $this->makeModel()->all($searchColumns);
     }
 
     /**
