@@ -23,7 +23,9 @@ class Provider extends ServiceProvider
      */
     public function boot()
     {
-
+        $this->publishes([
+            __DIR__.'/configs/locale.php' => config_path('locale.php'),
+        ]);
     }
 
     /**
