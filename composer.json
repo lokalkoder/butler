@@ -24,13 +24,6 @@
     "psr-4": {
       "Lokal\\Butler\\": "src/"
     },
-    "extra": {
-      "laravel": {
-        "providers": [
-          "Lokal\\Butler\\Provider"
-        ]
-      }
-    },
     "classmap": [],
     "files": [
       "helpers/support.php",
@@ -38,6 +31,13 @@
       "helpers/response.php",
       "helpers/translation.php"
     ]
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Lokal\\Butler\\Provider"
+      ]
+    }
   },
   "require-dev": {
     "pestphp/pest": "^3.7",
